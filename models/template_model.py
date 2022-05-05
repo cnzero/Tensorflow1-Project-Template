@@ -3,7 +3,7 @@ import tensorflow as tf
 import os
 import sys
 sys.path.append(os.getcwd())
-from base.base_model import BaseModel
+from base.model import BaseModel
 
 
 class TemplateModel(BaseModel):

@@ -1,18 +1,10 @@
-from base.base_model import BaseModel
+from base.model import BaseModel
 import tensorflow as tf
 
 
 class ExampleModel(BaseModel):
     def __init__(self, config):
         super(ExampleModel, self).__init__(config)
-
-        self.is_training = None
-        self.x = None
-        self.y = None
-        self.cross_entropy = None
-        self.train_step = None
-        self.accuracy = None
-        self.saver = None
 
         self.build_model()
         self.init_saver()
