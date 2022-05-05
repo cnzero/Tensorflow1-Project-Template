@@ -1,0 +1,10 @@
+data:
+  video_samplerate: 25
+  audio_samplerate: 16000
+train:
+  data_dir: ./train
+test:
+  data_dir: ./test
+model:
+  audio_encoder: 1
+  video_encoder: 2

@@ -1,5 +1,7 @@
 import tensorflow as tf
 
+import os, sys
+sys.path.append(os.getcwd())
 from data_loader.data_generator import DataGenerator
 from models.example_model import ExampleModel
 from trainers.example_trainer import ExampleTrainer
@@ -33,7 +35,7 @@ def main():
     logger = Logger(sess, config)
     # create trainer and pass all the previous components to it
     trainer = ExampleTrainer(sess, model, data, config, logger)
-    #load model if exists
+    # load model if exists
     model.load(sess)
     # here you train your model
     trainer.train()

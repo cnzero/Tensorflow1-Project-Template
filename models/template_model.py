@@ -1,5 +1,9 @@
-from base.base_model import BaseModel
 import tensorflow as tf
+
+import os
+import sys
+sys.path.append(os.getcwd())
+from base.base_model import BaseModel
 
 
 class TemplateModel(BaseModel):
@@ -10,7 +14,8 @@ class TemplateModel(BaseModel):
         self.init_saver()
 
     def build_model(self):
-        # here you build the tensorflow graph of any model you want and also define the loss.
+        # here you build the tensorflow graph of any model you want
+        # and also define the loss.
         pass
 
     def init_saver(self):
@@ -18,3 +23,7 @@ class TemplateModel(BaseModel):
         # self.saver = tf.train.Saver(max_to_keep=self.config.max_to_keep)
 
         pass
+
+
+if __name__ == '__main__':
+    print('self-test Hello World in ', __file__)

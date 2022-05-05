@@ -31,3 +31,7 @@ class BaseTrain:
         - return any metrics you need to summarize
         """
         raise NotImplementedError
+
+
+if __name__ == '__main__':
+    print('self-testing Hello World in ', __file__)

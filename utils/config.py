@@ -24,3 +24,10 @@ def process_config(json_file):
     config.summary_dir = os.path.join("../experiments", config.exp_name, "summary/")
     config.checkpoint_dir = os.path.join("../experiments", config.exp_name, "checkpoint/")
     return config
+
+
+if __name__ == '__main__':
+    print('self-testing Hello World in ', __file__)
+
+    json_file = 'configs/example.json'
+    print(process_config(json_file=json_file))
