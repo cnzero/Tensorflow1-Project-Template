@@ -1,3 +1,7 @@
+# ignore Fashion mnist data directory
+FashionMNIST/processed/
+FashionMNIST/raw/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
