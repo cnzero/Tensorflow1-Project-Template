@@ -1,6 +1,10 @@
 # ignore Fashion mnist data directory
 FashionMNIST/processed/
 FashionMNIST/raw/
+tensorboard_tutorial/log/
+
+events.*
+model.ckpt*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
